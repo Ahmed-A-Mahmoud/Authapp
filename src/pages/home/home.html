@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Username: {{(profileData|async)?.username}}</p>
+  <p>First name: {{(profileData|async)?.firstname}}</p>
+  <p>Last name: {{(profileData|async)?.lastname}}</p>
+  <button ion-button block clear (click)="logout()" color="danger">Logout</button>
+</ion-content>
